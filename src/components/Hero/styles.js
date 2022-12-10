@@ -3,8 +3,7 @@ import styled from "styled-components";
 const Container = styled.div`
   height: 300px;
   width: 100%;
-  background: url("${({ image }) => image}")
-    no-repeat center center/cover;
+  background: url("${({ image }) => image}") no-repeat center center/cover;
   color: white;
   display: flex;
   align-items: center;
