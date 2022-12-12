@@ -65,4 +65,15 @@ const ProductButton = styled.button`
     color: #000;
   }
 `;
-export {ProductButton,ProductPrice,ProductDesc,ProductInfo,ProductTitle,ProductsHeading,ProductImg,ProductCardProductWrapper,ProductsContainer}
+export {
+  ProductCard,
+  ProductWrapper,
+  ProductButton,
+  ProductPrice,
+  ProductDesc,
+  ProductInfo,
+  ProductTitle,
+  ProductsHeading,
+  ProductImg,
+  ProductsContainer,
+};
