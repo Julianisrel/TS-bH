@@ -5,6 +5,7 @@ const Container = styled.div`
   width: 100%;
   background: url("${({ image }) => image}") no-repeat center center/cover;
   color: white;
+  height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
