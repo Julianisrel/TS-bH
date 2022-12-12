@@ -1,6 +1,8 @@
-import { Link, Route } from "react-router-dom";
+// import { Link, Routes, Route } from "react-router-dom";
+// import { productData, productDataTwo } from "./components/Products/data";
+
 import { Container } from "./components/styled/Container.styled";
-import { Footer, Card, Header, Nav, Hero } from "./components";
+import { Products, Footer, Card, Header, Nav, Hero } from "./components";
 import GlobalStyles from "./components/styled/Global";
 
 import content from "./content";
@@ -10,15 +12,17 @@ function App() {
     <>
       <GlobalStyles />
       <Nav />
+
       <Header />
 
       <Hero />
+
       <Container>
         {content.map((item, index) => (
           <Card key={index} item={item} />
         ))}
-
         <Footer />
+        {/* <Products heading="Choose your favorite" data={productData} /> */}
       </Container>
     </>
   );
