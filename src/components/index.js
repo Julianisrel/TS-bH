@@ -1,3 +1,4 @@
+export {default as Home} from "./Home"; 
 export { default as Body } from "./Body";
 export { default as Hero } from "./Hero";
 export { default as Nav } from "./Nav";

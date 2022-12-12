@@ -14,4 +14,8 @@ function Card({ item: { id, title, body, image } }) {
     </StyledCard>
   );
 }
+
+
+
+
 export default Card;
