@@ -1,7 +1,9 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import { ThemeProvider } from "./common";
+
+import { Routes, ThemeProvider } from "./common";
 import { BrowserRouter as Router } from "react-router-dom";
+import { Products, Home, Footer, Card, Header, Nav, Hero } from "./components";
 import App from "./App";
 
 const rootElement = document.getElementById("root");
@@ -9,10 +11,12 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <Router>
-      <ThemeProvider>
+    <ThemeProvider>
+      <Router>
+        <Header />
+
         <App />
-      </ThemeProvider>
-    </Router>
+      </Router>
+    </ThemeProvider>
   </StrictMode>
 );

@@ -1,8 +1,5 @@
-// import { Link, Routes, Route } from "react-router-dom";
-// import { productData, productDataTwo } from "./components/Products/data";
-
 import { Container } from "./components/styled/Container.styled";
-import { Products, Footer, Card, Header, Nav, Hero } from "./components";
+import { Products, Home, Footer, Card, Header, Hero } from "./components";
 import GlobalStyles from "./components/styled/Global";
 
 import content from "./content";
@@ -11,10 +8,7 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      <Nav />
-
-      <Header />
-
+      <Home />
       <Hero />
 
       <Container>
@@ -22,7 +16,6 @@ function App() {
           <Card key={index} item={item} />
         ))}
         <Footer />
-        {/* <Products heading="Choose your favorite" data={productData} /> */}
       </Container>
     </>
   );
@@ -35,3 +28,6 @@ export default App;
 //   <Route exact path="/" component={Home} />
 //   <Route exact path="/movies/" component={MovieList} />
 //   <Route path="/movies/:id" Movies={Movie} />
+{
+  /* <Products heading="Choose your favorite" data={productData} /> */
+}
