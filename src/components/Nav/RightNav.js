@@ -46,12 +46,9 @@ const RightNav = ({ open }) => {
         {" "}
         <Link to="/Cart">Cart</Link>
       </li>
-      <Routes>
-        <Route path="/" component={Home} />
-        {/* <Route path="/" component={ProductList} /> */}
-      </Routes>
     </Ul>
   );
 };
+
 export default RightNav;
 // #3c3c3c
