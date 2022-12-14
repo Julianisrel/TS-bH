@@ -1,27 +1,29 @@
 import styled from "styled-components";
 
-const Nav = styled.nav`
-  width: 100%;
-  height: 55px;
-  border-bottom: 2px solid #f1f1f1;
-  padding: 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+const Container = styled.div`
+  width:100vh;
+
+
 `;
 
-export { Nav };
 
-// nav {
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: center;
-//   padding: 0 16px;
-//   border-bottom: 1px solid #efefef;
-//   margin-bottom: 32px;
-// }
 
-// .nav-links {
-//   display: flex;
-//   justify-content: space-between;
-// }
+
+
+
+
+// const Login = styled(IoPersonOutline)`
+//   cursor: pointer;
+//   color: ${({ theme }) => theme.colors.green};
+//   width: 2rem;
+//   height: 2rem;
+//   transition: all 200ms ease;
+//   :hover {
+//     color: ${({ theme }) => theme.colors.green};
+//   }
+// `;
+
+export {Container};
+
+

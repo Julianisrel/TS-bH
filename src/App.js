@@ -22,12 +22,3 @@ function App() {
 }
 export default App;
 
-// <Link to="/">Home</Link>
-// <Link to="/movies">Movies</Link>
-// <nav>
-//   <Route exact path="/" component={Home} />
-//   <Route exact path="/movies/" component={MovieList} />
-//   <Route path="/movies/:id" Movies={Movie} />
-{
-  /* <Products heading="Choose your favorite" data={productData} /> */
-}
