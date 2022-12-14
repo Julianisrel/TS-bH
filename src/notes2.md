@@ -18,3 +18,12 @@
   display: flex;
   justify-content: space-between;
 }
+
+transtion property- makes a it so en alalent will slowly change. 
+--------------------------------------------------------------------------
+
+
+
+  left: ${({ display }) => (display ? '0' : '-5000px')};
+
+<!-- if its displayed I want it to be 0 and if not negative 5000  -->

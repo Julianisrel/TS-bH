@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu } from "react-icons/ai";
 // import { IoPersonOutline } from 'react-icons/io';
 
 // import { NavLink } from 'react-router-dom';
 
-const Header = styled.nav`
+const HeaderConatiner = styled.nav`
   position: fixed;
   z-index: ${({ theme }) => theme.zIndexes.white};
   top: 0;
@@ -40,17 +40,17 @@ const Menu = styled(AiOutlineMenu)`
 //     color: ${({ theme }) => theme.colors.green};
 //   }
 // `;
-// const MobileMenuContainer = styled.div<{ display: boolean }>`
-//   position: fixed;
-//   z-index: ${({ theme }) => theme.zIndexes.header};
-//   left: ${({ display }) => (display ? '0' : '-5000px')};
-//   transition: all 500ms ease;
-//   top: ${({ theme }) => theme.headerHeight};
-//   color: ${({ theme }) => theme.colors.primary};
-//   background: rgba(0, 0, 0, 0.7);
-//   width: 100%;
-//   height: calc(100vh - ${({ theme }) => theme.headerHeight});
-// `;
+const MobileMenuContainer = styled.div<{ display: boolean }>`
+  position: fixed;
+  z-index: ${({ theme }) => theme.zIndexes.header};
+  left: ${({ display }) => (display ? '0' : '-5000px')};
+  transition: all 500ms ease;
+  top: ${({ theme }) => theme.headerHeight};
+  color: ${({ theme }) => theme.colors.primary};
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: calc(100vh - ${({ theme }) => theme.headerHeight});
+`;
 
 // const MobileMenuItem = styled(NavLink)`
 //   text-decoration: none;
@@ -67,4 +67,4 @@ const Menu = styled(AiOutlineMenu)`
 //   }
 // `;
 
-export { Header, Menu}
+export { HeaderConatiner, Menu ,MobileMenuContainer };

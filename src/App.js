@@ -8,8 +8,9 @@ function App() {
   return (
     <>
       <GlobalStyles />
+      <Header />
       <Home />
-      <Hero />
+      {/* <Hero /> */}
 
       <Container>
         {content.map((item, index) => (
@@ -21,4 +22,3 @@ function App() {
   );
 }
 export default App;
-
