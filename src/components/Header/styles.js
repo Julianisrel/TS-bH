@@ -40,10 +40,11 @@ const Menu = styled(AiOutlineMenu)`
 //     color: ${({ theme }) => theme.colors.green};
 //   }
 // `;
-const MobileMenuContainer = styled.div<{ display: boolean }>`
+const MobileMenuContainer = styled.div`
+  display: boolean;
   position: fixed;
   z-index: ${({ theme }) => theme.zIndexes.header};
-  left: ${({ display }) => (display ? '0' : '-5000px')};
+  left: ${({ display }) => (display ? "0" : "-5000px")};
   transition: all 500ms ease;
   top: ${({ theme }) => theme.headerHeight};
   color: ${({ theme }) => theme.colors.primary};
@@ -67,4 +68,4 @@ const MobileMenuContainer = styled.div<{ display: boolean }>`
 //   }
 // `;
 
-export { HeaderConatiner, Menu ,MobileMenuContainer };
+export { HeaderConatiner, Menu, MobileMenuContainer };
