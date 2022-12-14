@@ -12,11 +12,10 @@ const root = createRoot(rootElement);
 root.render(
   <StrictMode>
     <ThemeProvider>
-      <Router>
-        <Header />
+    
 
         <App />
-      </Router>
+      
     </ThemeProvider>
   </StrictMode>
 );
